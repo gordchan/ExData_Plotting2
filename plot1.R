@@ -14,6 +14,8 @@ tPM2.5 <- NEI %>% group_by(year) %>% summarise(sum(Emissions))
 
 names(tPM2.5) <- c("year", "total")
 
+## Plot xy graph
+
 png(filename = "plot1.png")
 
   plot(total~year, data=tPM2.5, type = "l", xlab = "Year", ylab = "Total Emissions (Tons)")
