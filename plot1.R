@@ -18,7 +18,7 @@ names(tPM2.5) <- c("year", "total")
 
 png(filename = "plot1.png")
 
-  plot(total~year, data=tPM2.5, type = "l", xlab = "Year", ylab = "Total Emissions (Tons)")
+  plot(total~year, data=tPM2.5, type = "l", lwd = 2, xlab = "Year", ylab = "Total Emissions (Tons)")
     title(main="Total PM2.5 Emissions per Year")
     
 dev.off()

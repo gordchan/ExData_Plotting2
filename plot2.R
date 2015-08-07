@@ -18,7 +18,7 @@ names(ctPM2.5) <- c("year", "total")
 
 png(filename = "plot2.png")
 
-  plot(total~year, data=ctPM2.5, type = "l", xlab = "Year", ylab = "Total Emissions (Tons)")
+  plot(total~year, data=ctPM2.5, type = "l", lwd = 2, xlab = "Year", ylab = "Total Emissions (Tons)")
     title(main="Total PM2.5 Emissions per Year\n(Baltimore City, Maryland)")
 
 dev.off()
